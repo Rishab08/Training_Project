@@ -22,7 +22,7 @@ body {
 }
 
 /* Full-width input fields */
-input[type=text], input[type=password] {
+ input[type=email],input[type=text], input[type=password] {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -31,7 +31,7 @@ input[type=text], input[type=password] {
   background: #f1f1f1;
 }
 
-input[type=text]:focus, input[type=password]:focus {
+input[type=email] input[type=text]:focus, input[type=password]:focus {
   background-color: #ddd;
   outline: none;
 }
@@ -41,9 +41,19 @@ hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
 }
+button { 
+       background-color: #1a808d; 
+       width: 100%;
+        color: orange; 
+        padding: 15px; 
+        margin: 10px 0px; 
+        border: none; 
+        display: inline-block;
+        cursor: pointer; 
+         } 
 
 /* Set a style for the submit button */
-.registerbtn {
+.signupbtn {
   background-color: #04AA6D;
   color: white;
   padding: 16px 20px;
@@ -54,7 +64,7 @@ hr {
   opacity: 0.9;
 }
 
-.registerbtn:hover {
+.signupbtn:hover {
   opacity: 1;
 }
 
@@ -62,6 +72,26 @@ hr {
 a {
   color: dodgerblue;
 }
+.loginbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.loginbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
 
 /* Set a grey background color and center the text of the "sign in" section */
 .signin {

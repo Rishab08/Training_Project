@@ -4,7 +4,14 @@
 
 {% block content %}
 {% if user.is_authenticated %}
-  Hi  {{ user.username }} <br> your  email is  {{user.email}}  !
+  Hi   {{ user.username }}Your details are : <br> <br>
+  your  email is  {{user.email}}  <br><br>
+  your  username is  {{user.username}}<br><br>
+  your phone no is  {{user.phone}}  <br><br>
+  your  DOB is  {{user.date_of_birth}}  !
+!
+  !
+
   <p><a href="{% url 'logout' %}">Log Out</a></p>
 {% else %}
   <p>You are not logged in</p>
