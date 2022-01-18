@@ -1,0 +1,23 @@
+{% extends "admin/base.html" %}
+{% block content %}
+<h1>USERS TABLE</h1>
+<table>
+    <tr>
+        <th>username</th>
+        <th>email</th>
+        <th>PHONE</th>
+        <th>DOB</th>
+        <th>STATUS</th>
+
+    </tr>
+    {% for item in value %}
+    <tr>
+        <td>{{ item.username }}</td>
+        <td>{{ item.email }}</td>
+     <td>{{ item.phone }}</td>
+     <td>{{ item.date_of_birth }}</td>
+     <td>{{ item.test_res }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

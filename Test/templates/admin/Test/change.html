@@ -1,0 +1,13 @@
+{% extends "admin/change_list.html" %}
+{% block content %}
+
+
+
+
+<form action="/Test/upload-file/" method="post", enctype="multipart/form-data" >
+      {% csrf_token %}
+    <input type="file" id="myfile" name="myfile" required="required">
+    <input type="submit">
+</form>
+
+{% endblock %}
